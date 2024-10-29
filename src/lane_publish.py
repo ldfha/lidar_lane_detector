@@ -32,7 +32,7 @@ class LaneCenterToPath:
 
         # 장애물 감지 시간 초기화
         self.obstacle_detected_time = None
-        self.detection_duration = timedelta(seconds=1)  # 1초 동안 장애물 감지
+        self.detection_duration = timedelta(seconds=0.5)  # 1초 동안 장애물 감지
 
     def lane_center_callback(self, marker_msg):
         if self.fixed_path is None:
